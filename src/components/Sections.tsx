@@ -344,8 +344,13 @@ export function Expertise() {
   return (
     <Section id="expertise" eyebrow={x.eyebrow} title={x.title}>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {x.items.map((it) => (
-          <div key={it.title} className="rounded-2xl border border-slate-200 bg-white p-6">
+        {x.items.map((it, i) => (
+          <div
+            key={it.title}
+            className={`rounded-2xl border border-slate-200 bg-white p-6 ${
+              i === x.items.length - 1 && x.items.length % 3 === 1 ? 'sm:col-span-2 lg:col-span-3' : ''
+            }`}
+          >
             <h3 className="text-lg font-bold text-ink">{it.title}</h3>
             <p className="mt-2 text-secondary">{it.text}</p>
             <div className="mt-4 flex flex-wrap gap-1.5">

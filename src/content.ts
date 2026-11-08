@@ -10,7 +10,7 @@ const en = {
     experience: 'Experience',
     highlights: 'Highlights',
     publications: 'Publications',
-    techasdy: 'Tech Asdy',
+    techasdy: 'TechAsdy',
     reviews: 'Reviews',
     contact: 'Contact',
     menuOpen: 'Open menu',
@@ -23,7 +23,7 @@ const en = {
     headline: 'Tech expert & problem solver,',
     headlineSub: 'fluent from embedded systems to software.',
     summary:
-      'I lead mobile engineering at FieldEx, hold a CCNA, and know embedded systems down to the architecture. I’ve led 50+ projects for international clients and I’m redefining Made in Nepal and DIY culture with 8,000+ engineers, hardware techs and students through Tech Asdy.',
+      'I lead mobile engineering at FieldEx, hold a CCNA, and know embedded systems down to the architecture. I’ve completed 100+ projects for international clients. Now I’m redefining Made in Nepal and DIY culture with 8,000+ engineers, hardware techs and students through Tech Asdy.',
     roles: ['Lead Mobile Developer', 'Embedded Systems Engineer', 'CCNA Certified', 'Author & Educator', 'Made in Nepal Advocate'],
     ctaPrimary: 'View my journey',
     ctaSecondary: 'Get in touch',
@@ -46,7 +46,7 @@ const en = {
     eyebrow: 'About',
     title: ['A ', 'tech expert', ' who understands software, hardware and silicon chips.'],
     paragraphs: [
-      'I was never second in class from grade 1 to 10, and I was the **batch topper in the SLC (2057 B.S.) at Jan Jivan Secondary School, Madi**. By 2006 I had co-authored a programming book and helped build a computer-controlled electronic voting machine that made national headlines.',
+      'Born in Kaski in 1985 and raised in Chitwan, I’m a small-town boy who still remembers his school days: from grade 1 to grade 10 I came first in class every single year (“First Bhai”, as we say in Nepal), right through to becoming the **batch topper in the SLC (2057 B.S.) at Jan Jivan Secondary School, Madi**. By 2006 I had co-authored a programming book and helped build a computer-controlled electronic voting machine that made national headlines.',
       'I completed my **Master’s in IT in 2009** and earned my **CCNA from Cisco Networks, USA in 2011**. From 2009 to 2014 I worked in academia as Head of Computer Science at Kumudini Homes, Pokhara, and as faculty at Kanya Campus and LA Grandee International College, while also leading more than 50 software projects for international clients.',
       'I then worked as a Senior Fullstack Developer at AndMine and now lead mobile development at **FieldEx Singapore**. I know computers and embedded systems down to the architecture, so I can take a product from circuit board to app store. Through **Tech Asdy** I’m redefining Made in Nepal and DIY culture with a community of 8,000+ engineers, hardware techs and students.',
     ],
@@ -54,7 +54,7 @@ const en = {
       { label: 'Education', value: 'Master of IT, Sikkim Manipal University, 2009 (A grade)' },
       { label: 'Certification', value: 'CCNA, Cisco Networks USA, 2011' },
       { label: 'Current role', value: 'Lead Mobile Developer, FieldEx' },
-      { label: 'Born', value: 'April 1985' },
+      { label: 'Born', value: 'April 1985 · Kaski' },
     ],
   },
   experience: {
@@ -126,7 +126,7 @@ const en = {
     title: 'Milestones along the way',
     intro: 'A record of consistent excellence, from the classroom to national headlines.',
     items: [
-      { year: 'Grades 1–10', title: 'Never second in class', text: 'First in class every single year from grade 1 to grade 10.' },
+      { year: 'Grades 1–10', title: 'People called me “First Bhai”', text: 'A nickname from my school days that has stayed with me ever since.' },
       { year: '2057 B.S.', title: 'SLC Batch Topper', text: 'Batch topper in the School Leaving Certificate at Jan Jivan Secondary School, Madi.' },
       { year: '2006', title: 'Electronic voting machine', text: 'One of the innovators of a computer-controlled electronic voting machine, with nationwide media coverage.' },
       { year: '2009', title: 'Master of IT', text: 'Completed a Master’s degree in Information Technology. A grade, 89.25%, Sikkim Manipal University.' },
@@ -184,11 +184,12 @@ const en = {
     title: 'What I bring to a team',
     items: [
       { title: 'Mobile Engineering', text: 'Native and cross-platform apps for Android and iOS, offline-first field apps and team leadership.', tags: ['Android', 'iOS', 'Cross-platform', 'BLE'] },
-      { title: 'Embedded Systems', text: 'Deep understanding of computer and embedded architecture, from microcontrollers to complete machines.', tags: ['Microcontrollers', 'Arduino', 'Firmware', 'Sensors'] },
+      { title: 'Embedded Systems', text: 'Deep understanding of computer and embedded architecture, from microcontrollers to complete machines, including the first made-in-Nepal multifunction component tester.', tags: ['Microcontrollers', 'Arduino', 'Firmware', 'Sensors', 'Component tester'] },
       { title: 'Robotics & Automation', text: 'CNC-style motion systems and pick-and-place machines designed and built in Nepal.', tags: ['Stepper control', 'Motion systems', 'DIY hardware'] },
       { title: 'Networking', text: 'CCNA-certified grounding in how devices, networks and services talk to each other.', tags: ['CCNA', 'Cisco', 'IoT', 'Protocols'] },
       { title: 'Web & Backend', text: 'Web systems and APIs since the PHP and MySQL days, connected to devices and mobile clients.', tags: ['PHP', 'MySQL', 'REST APIs'] },
       { title: 'Teaching & Mentoring', text: 'Five years in academia as HOD and faculty, plus workshops in four countries.', tags: ['Curriculum', 'Workshops', 'Mentoring'] },
+      { title: 'Electronics Design & Prototyping', text: 'Electronic device engineering from idea to working prototype: schematic and PCB design, PCB making, 3D mechanical design and enclosures.', tags: ['KiCad', 'EasyEDA', 'Fusion 360', 'SolidCraft', 'PCB making', 'Prototyping'] },
     ],
   },
   techasdy: {
@@ -265,7 +266,7 @@ const np: Content = {
     headline: 'प्रविधि विज्ञ र समस्या समाधानकर्ता,',
     headlineSub: 'एम्बेडेड सिस्टमदेखि सफ्टवेयरसम्म।',
     summary:
-      'म FieldEx मा मोबाइल इन्जिनियरिङ टोलीको नेतृत्व गर्दै आएको छु। म CCNA प्रमाणित प्राविधिक हुँ र एम्बेडेड प्रणालीहरूको आर्किटेक्चर तहसम्म गहिरो प्राविधिक ज्ञान राख्छु। अन्तर्राष्ट्रिय ग्राहकहरूका ५० भन्दा बढी परियोजनाहरूको सफल नेतृत्व गरिसकेको छु। साथै, Tech Asdy मार्फत ८,००० भन्दा बढी इन्जिनियर, हार्डवेयर प्राविधिक तथा विद्यार्थीहरूलाई जोड्दै ‘Made in Nepal’ र ‘आफैँ बनाऔँ’ (DIY) संस्कृतिलाई नयाँ पहिचान दिने अभियानमा सक्रिय छु।',
+      'म FieldEx मा मोबाइल इन्जिनियरिङ टोलीको नेतृत्व गर्दै आएको छु। म CCNA प्रमाणित प्राविधिक हुँ र एम्बेडेड प्रणालीहरूको आर्किटेक्चर तहसम्म गहिरो प्राविधिक ज्ञान राख्छु। अन्तर्राष्ट्रिय ग्राहकहरूका 100 भन्दा बढी परियोजनाहरूको सफल नेतृत्व गरिसकेको छु। साथै, TechAsdy DIY & Robotics मार्फत ८,००० भन्दा बढी इन्जिनियर, हार्डवेयर प्राविधिक तथा विद्यार्थीहरूलाई जोड्दै ‘Made in Nepal’ र ‘आफैँ बनाऔँ’ (DIY) संस्कृतिलाई नयाँ पहिचान दिने अभियानमा सक्रिय छु।',
     roles: ['Lead Mobile Developer', 'Embedded Systems Engineer', 'CCNA Certified', 'लेखक र शिक्षक', 'Made in Nepal अभियन्ता'],
     ctaPrimary: 'मेरो यात्रा हेर्नुहोस्',
     ctaSecondary: 'सम्पर्क गर्नुहोस्',
@@ -274,7 +275,7 @@ const np: Content = {
     badges: {
       slc: ['SLC Batch Topper · वि.सं. २०५७', 'जनजीवन माध्यमिक विद्यालय, माडी'],
       rating: ['४.९ / ५ rating', '२० clients को समीक्षा'],
-      fans: ['८,०००+ इन्जिनियर, हार्डवेयर प्राविधिक र विद्यार्थी', 'TikTok मा Tech Asdy समुदाय'],
+      fans: ['८,०००+ इन्जिनियर, हार्डवेयर प्राविधिक र विद्यार्थी', 'TikTok मा TechAsdy Community'],
       ccna: ['CCNA certified', 'Cisco Networks, USA'],
     },
   },
@@ -288,15 +289,15 @@ const np: Content = {
     eyebrow: 'परिचय',
     title: ['सफ्टवेयरदेखि हार्डवेयर र सिलिकन चिपसम्म बुझ्ने ', 'प्रविधि विज्ञ', '।'],
     paragraphs: [
-      'कक्षा १ देखि १० सम्म म सधैँ फस्ट भई **जनजीवन माध्यमिक विद्यालय, माडीबाट SLC (वि.सं. २०५७) मा batch topper** भएँ। सन् २००६ सम्ममा मैले programming सम्बन्धी पुस्तक सह-लेखन गरिसकेको थिएँ र राष्ट्रिय समाचारमा छाएको computer-controlled electronic voting machine निर्माणमा सहभागी भइसकेको थिएँ।',
+      'सन् १९८५ मा कास्कीमा जन्मिएँ र चितवनमा हुर्किएँ। कक्षा १ देखि १० सम्म लगातार फस्ट भई **जनजीवन माध्यमिक विद्यालय, माडीबाट SLC (वि.सं. २०५७) मा batch topper** बनेका ती स्कूले दिनहरू म अझै सम्झन्छु। सन् २००६ सम्ममा मैले programming सम्बन्धी पुस्तक सह-लेखन गरिसकेको थिएँ र राष्ट्रिय समाचारमा छाएको computer-controlled electronic voting machine निर्माणमा सहभागी भइसकेको थिएँ।',
       'सन् २००९ मा **Master’s in IT** पूरा गरेँ र सन् २०११ मा **Cisco Networks, USA बाट CCNA** प्राप्त गरेँ। सन् २००९ देखि २०१४ सम्म कुमुदिनी होम्स, पोखरामा Computer Science विभाग प्रमुख (HOD) तथा कन्या क्याम्पस र LA Grandee International College मा faculty को रूपमा शैक्षिक क्षेत्रमा काम गरेँ। सँगसँगै अन्तर्राष्ट्रिय clients का ५० भन्दा बढी software projects को नेतृत्व गरेँ।',
-      'त्यसपछि AndMine मा Senior Fullstack Developer को रूपमा काम गरेँ र अहिले **FieldEx Singapore** मा mobile development को नेतृत्व गर्दैछु। Computer र embedded systems को architecture सम्मको गहिरो ज्ञानले गर्दा म circuit board देखि app store सम्म पूरा product बनाउन सक्छु। **Tech Asdy** मार्फत ८,०००+ इन्जिनियर, हार्डवेयर प्राविधिक र विद्यार्थीहरूको समुदायसँग Made in Nepal र DIY संस्कृतिलाई नयाँ परिभाषा दिँदैछु।',
+      'त्यसपछि AndMine मा Senior Fullstack Developer को रूपमा काम गरेँ र अहिले **FieldEx Singapore** मा mobile development को नेतृत्व गर्दैछु। Computer र embedded systems को architecture सम्मको गहिरो ज्ञानले गर्दा म circuit board देखि app store सम्म पूरा product बनाउन सक्छु। **TechAsdy** मार्फत ८,०००+ इन्जिनियर, हार्डवेयर प्राविधिक र विद्यार्थीहरूको समुदायसँग Made in Nepal र DIY संस्कृतिलाई नयाँ परिभाषा दिँदैछु।',
     ],
     facts: [
       { label: 'शिक्षा', value: 'Master of IT, सिक्किम मणिपाल विश्वविद्यालय, सन् २००९ (A ग्रेड)' },
       { label: 'प्रमाणपत्र', value: 'CCNA, Cisco Networks USA, सन् २०११' },
       { label: 'हालको भूमिका', value: 'Lead Mobile Developer, FieldEx' },
-      { label: 'जन्म', value: 'अप्रिल १९८५' },
+      { label: 'जन्म', value: 'अप्रिल १९८५ · कास्की' },
     ],
   },
   experience: {
@@ -368,12 +369,12 @@ const np: Content = {
     title: 'यात्राका कोसेढुङ्गाहरू',
     intro: 'कक्षाकोठादेखि राष्ट्रिय समाचारसम्म निरन्तर उत्कृष्टता।',
     items: [
-      { year: 'कक्षा १–१०', title: 'सधैँ फस्ट भई', text: 'कक्षा १ देखि १० सम्म हरेक वर्ष कक्षामा प्रथम।' },
+      { year: 'कक्षा १–१०', title: 'मान्छेहरू “फस्ट भाइ” भन्थे', text: 'स्कूले दिनदेखि आजसम्म साथ रहेको एउटा प्यारो उपनाम।' },
       { year: 'वि.सं. २०५७', title: 'SLC Batch Topper', text: 'जनजीवन माध्यमिक विद्यालय, माडीबाट SLC मा batch topper।' },
       { year: '२००६', title: 'Electronic voting machine', text: 'Computer-controlled electronic voting machine का आविष्कारकमध्ये एक, देशव्यापी media कभरेजसहित।' },
       { year: '२००९', title: 'Master of IT', text: 'Information Technology मा स्नातकोत्तर। A ग्रेड, ८९.२५%, सिक्किम मणिपाल विश्वविद्यालय।' },
       { year: '२०११', title: 'CCNA certified', text: 'Cisco Certified Network Associate, Cisco Networks, USA।' },
-      { year: 'अहिले', title: 'Made in Nepal लाई नयाँ परिभाषा', text: 'Tech Asdy मार्फत ८,०००+ इन्जिनियर, हार्डवेयर प्राविधिक र विद्यार्थीहरूसँग DIY र robotics अभियानको नेतृत्व।' },
+      { year: 'अहिले', title: 'Made in Nepal लाई नयाँ परिभाषा', text: 'TechAsdy मार्फत ८,०००+ इन्जिनियर, हार्डवेयर प्राविधिक र विद्यार्थीहरूसँग DIY र robotics अभियानको नेतृत्व।' },
     ],
     voting: {
       tag: 'समाचारमा · २००६',
@@ -426,17 +427,18 @@ const np: Content = {
     title: 'Team मा म के ल्याउँछु',
     items: [
       { title: 'Mobile Engineering', text: 'Android र iOS का लागि native तथा cross-platform apps, offline-first field apps र team नेतृत्व।', tags: ['Android', 'iOS', 'Cross-platform', 'BLE'] },
-      { title: 'Embedded Systems', text: 'Microcontroller देखि पूर्ण machine सम्म, computer र embedded architecture को गहिरो ज्ञान।', tags: ['Microcontrollers', 'Arduino', 'Firmware', 'Sensors'] },
+      { title: 'Embedded Systems', text: 'Microcontroller देखि पूर्ण machine सम्म, computer र embedded architecture को गहिरो ज्ञान, जसमा नेपालमै बनेको पहिलो multifunction component tester पनि पर्छ।', tags: ['Microcontrollers', 'Arduino', 'Firmware', 'Sensors', 'Component tester'] },
       { title: 'Robotics र Automation', text: 'नेपालमै डिजाइन र निर्माण गरिएका CNC-style motion systems र pick-and-place machines।', tags: ['Stepper control', 'Motion systems', 'DIY hardware'] },
       { title: 'Networking', text: 'Devices, networks र services बीच कसरी कुरा हुन्छ भन्ने CCNA-certified आधार।', tags: ['CCNA', 'Cisco', 'IoT', 'Protocols'] },
       { title: 'Web र Backend', text: 'PHP र MySQL को समयदेखि devices र mobile clients सँग जोडिएका web systems र APIs।', tags: ['PHP', 'MySQL', 'REST APIs'] },
       { title: 'शिक्षण र Mentoring', text: 'HOD र faculty को रूपमा पाँच वर्ष शैक्षिक क्षेत्रमा, साथै चार देशमा workshops।', tags: ['Curriculum', 'Workshops', 'Mentoring'] },
+      { title: 'Electronics Design र Prototyping', text: 'विचारदेखि चल्ने prototype सम्म electronic device engineering: schematic र PCB design, PCB making, 3D mechanical design र enclosure।', tags: ['KiCad', 'EasyEDA', 'Fusion 360', 'SolidCraft', 'PCB making', 'Prototyping'] },
     ],
   },
   techasdy: {
     eyebrow: 'Made in Nepal',
     title: 'Made in Nepal र DIY संस्कृतिलाई नयाँ परिभाषा',
-    text: '**Tech Asdy** मार्फत म देखाउँदैछु कि गुणस्तरीय हार्डवेयर र IoT उत्पादनहरू नेपालमै डिजाइन र निर्माण गर्न सकिन्छ। **८,००० भन्दा बढी इन्जिनियर, हार्डवेयर प्राविधिक तथा विद्यार्थीहरू** हार्डवेयर डिजाइन, IoT, DIY इलेक्ट्रोनिक्स र रोबोटिक्सका लागि यो च्यानल फलो गर्छन्।',
+    text: '**TechAsdy** मार्फत गुणस्तरीय हार्डवेयर र IoT उत्पादनहरू नेपालमै डिजाइन र निर्माण गर्न सकिन्छ भन्ने कुरा प्रमाणित गरेर देखाउने सपना को यात्रा मा छु । **८,००० भन्दा बढी इन्जिनियर, हार्डवेयर प्राविधिक तथा विद्यार्थीहरू** हार्डवेयर डिजाइन, IoT, DIY इलेक्ट्रोनिक्स र रोबोटिक्सका लागि यो च्यानल फलो गर्छन्।',
     points: [
       'सर्किट बोर्डदेखि फर्मवेयरसम्म हार्डवेयर डिजाइन र एम्बेडेड सिस्टम',
       'सेन्सर र डिभाइसलाई क्लाउड तथा मोबाइल एपसँग जोड्ने IoT समाधान',
