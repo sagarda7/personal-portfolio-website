@@ -1,0 +1,10 @@
+name: portfolio-development
+services:
+  portfolio-dev:
+    build:
+      context: ../../
+      dockerfile: docker/Dockerfile
+    image: portfolio-dev
+    ports:
+      - "5006:80"
+    restart: unless-stopped

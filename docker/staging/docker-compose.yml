@@ -1,0 +1,10 @@
+name: portfolio-staging
+services:
+  portfolio-staging:
+    build:
+      context: ../../
+      dockerfile: docker/Dockerfile
+    image: portfolio-staging
+    ports:
+      - "5007:80"
+    restart: unless-stopped
