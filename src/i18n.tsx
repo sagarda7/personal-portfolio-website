@@ -23,6 +23,14 @@ export function LangProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     document.documentElement.lang = lang === 'np' ? 'ne' : 'en'
+
+    // Keep ?lang= in the address bar so the current language can be shared or bookmarked.
+    const url = new URL(window.location.href)
+    if (url.searchParams.get('lang') !== lang) {
+      url.searchParams.set('lang', lang)
+      window.history.replaceState(window.history.state, '', url)
+    }
+
     try {
       localStorage.setItem(STORAGE_KEY, lang)
     } catch {
