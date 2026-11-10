@@ -143,7 +143,7 @@ const en = {
   },
   awards: {
     eyebrow: 'Awards & recognition',
-    title: 'Recognised for innovation and impact',
+    title: 'Recognised for creative thinking, innovation and technical contribution',
     view: 'View full size',
     items: [
       {
@@ -388,7 +388,7 @@ const np: Content = {
   },
   awards: {
     eyebrow: 'पुरस्कार र सम्मान',
-    title: 'नवप्रवर्तन र योगदानका लागि सम्मानित',
+    title: 'सिर्जनशील सोच, नवप्रवर्तन र प्राविधिक योगदानका लागि सम्मानित',
     view: 'पूरा आकारमा हेर्नुहोस्',
     items: [
       {
