@@ -168,6 +168,7 @@ export function Highlights() {
                 <span className="text-sm font-semibold text-secondary">{m.year}</span>
               </div>
               <h3 className="text-lg font-bold text-ink">{m.title}</h3>
+              {'sub' in m && m.sub && <p className="mt-1 text-sm font-semibold text-primary-dark">{m.sub}</p>}
               <p className="mt-1.5 text-secondary">{m.text}</p>
             </div>
           )
@@ -396,14 +397,24 @@ export function TechAsdy() {
                 )
               })}
             </ul>
-            <a
-              href={links.tiktok}
-              target="_blank"
-              rel="noreferrer"
-              className="mt-8 inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3 font-semibold text-white transition hover:bg-black"
-            >
-              <TikTokIcon /> {m.follow}
-            </a>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a
+                href={links.tiktok}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3 font-semibold text-white transition hover:bg-black"
+              >
+                <TikTokIcon /> {m.follow}
+              </a>
+              <a
+                href={links.youtube}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 rounded-full bg-[#ff0000] px-6 py-3 font-semibold text-white transition hover:bg-[#d90000]"
+              >
+                <YouTubeIcon /> {m.subscribe}
+              </a>
+            </div>
           </div>
           <figure className="relative mx-auto w-full max-w-xs">
             <div className="overflow-hidden rounded-2xl border-4 border-white shadow-xl shadow-slate-300/50">
@@ -555,6 +566,14 @@ function WhatsAppIcon({ size = 18 }: Readonly<{ size?: number }>) {
   )
 }
 
+function YouTubeIcon({ size = 18 }: Readonly<{ size?: number }>) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+      <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31.3 31.3 0 0 0 0 12a31.3 31.3 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.3 31.3 0 0 0 24 12a31.3 31.3 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.2 3.6-6.2 3.6Z" />
+    </svg>
+  )
+}
+
 function TikTokIcon({ size = 18 }: { size?: number }) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden>
@@ -690,6 +709,7 @@ export function Contact() {
   const extra = [
     { href: links.freelancer, label: 'Freelancer' },
     links.linkedin && { href: links.linkedin, label: 'LinkedIn' },
+    links.youtube && { href: links.youtube, label: 'YouTube' },
     links.github && { href: links.github, label: 'GitHub' },
     links.facebook && { href: links.facebook, label: 'Facebook' },
   ].filter(Boolean) as { href: string; label: string }[]

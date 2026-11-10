@@ -69,8 +69,9 @@ const en = {
         period: '2016 – Present',
         current: true,
         points: [
-          'Leads mobile development for the FieldEx field service management platform.',
-          'Joined through FieldEx Malaysia and continues with FieldEx.',
+          'Architected the FieldEx mobile apps and wider product ecosystem as lead developer from the company’s early days.',
+          'In the early phase, delivered a wide range of client projects, from mobile apps to web applications.',
+          'Built natively and cross-platform with Kotlin, Swift and React Native, with deep focus on offline-first sync, dynamic UI rendering, performance tuning and security hardening.',
         ],
         tags: ['Java', 'Kotlin', 'Swift', 'React Native', 'WatermelonDB', 'Realm', 'MVVM', 'Dagger', 'Firebase', 'Docker', 'IoT', 'MQTT'],
       },
@@ -127,9 +128,9 @@ const en = {
     intro: 'A record of consistent excellence, from the classroom to national headlines.',
     items: [
       { year: 'Grades 1–10', title: 'People called me “First Bhai”', text: 'A nickname from my school days that has stayed with me ever since.' },
-      { year: '2057 B.S.', title: 'SLC Batch Topper', text: 'Batch topper in the School Leaving Certificate at Jan Jivan Secondary School, Madi.' },
+      { year: '2057 B.S.', title: 'Academic Excellence', text: 'Recognized as the SLC Batch Topper at Jan Jivan Secondary School, Madi, Nepal (2000 AD).' },
       { year: '2006', title: 'Electronic voting machine', text: 'One of the innovators of a computer-controlled electronic voting machine, with nationwide media coverage.' },
-      { year: '2009', title: 'Master of IT', text: 'Completed a Master’s degree in Information Technology. A grade, 89.25%, Sikkim Manipal University.' },
+      { year: '2009', title: 'Master of Science in Information Technology (M.Sc. IT)', sub: 'Sikkim Manipal University · A Grade · 89.25%', text: 'Earned a Master of Science in Information Technology, graduating with an A Grade and an overall score of 89.25%.' },
       { year: '2011', title: 'CCNA certified', text: 'Cisco Certified Network Associate, Cisco Networks, USA.' },
       { year: 'Today', title: 'Redefining Made in Nepal', text: 'Leading a DIY and robotics movement for 8,000+ engineers, hardware techs and students through Tech Asdy.' },
     ],
@@ -216,6 +217,7 @@ const en = {
     videosTitle: 'More from Tech Asdy',
     videosText: 'Short builds and experiments from the workshop.',
     follow: 'Follow on TikTok',
+    subscribe: 'Subscribe on YouTube',
     videoTitle: 'Tech Asdy video',
   },
   workshops: {
@@ -312,8 +314,9 @@ const np: Content = {
         period: '२०१६ – हाल',
         current: true,
         points: [
-          'FieldEx field service management platform को mobile development नेतृत्व।',
-          'FieldEx Malaysia बाट सुरु गरी हाल FieldEx Singapore मा कार्यरत।',
+          'कम्पनीको सुरुवाती दिनदेखि नै lead developer को रूपमा FieldEx mobile apps र सम्पूर्ण product ecosystem को architecture तयार गरेँ।',
+          'सुरुवाती चरणमा mobile apps देखि web applications सम्मका विभिन्न client projects सम्पन्न गरेँ।',
+          'Kotlin, Swift र React Native मार्फत native तथा cross-platform apps निर्माण, विशेष गरी offline-first sync, dynamic UI rendering, performance tuning र security enhancement मा।',
         ],
         tags: ['Java', 'Kotlin', 'Swift', 'React Native', 'WatermelonDB', 'Realm', 'MVVM', 'Dagger', 'Firebase', 'Docker', 'IoT', 'MQTT'],
       },
@@ -370,9 +373,9 @@ const np: Content = {
     intro: 'कक्षाकोठादेखि राष्ट्रिय समाचारसम्म निरन्तर उत्कृष्टता।',
     items: [
       { year: 'कक्षा १–१०', title: 'मान्छेहरू “फस्ट भाइ” भन्थे', text: 'स्कूले दिनदेखि आजसम्म साथ रहेको एउटा प्यारो उपनाम।' },
-      { year: 'वि.सं. २०५७', title: 'SLC Batch Topper', text: 'जनजीवन माध्यमिक विद्यालय, माडीबाट SLC मा batch topper।' },
+      { year: 'वि.सं. २०५७', title: 'शैक्षिक उत्कृष्टता', text: 'जनजीवन माध्यमिक विद्यालय, माडी, नेपालबाट SLC Batch Topper को रूपमा सम्मानित (सन् २०००)।' },
       { year: '२००६', title: 'Electronic voting machine', text: 'Computer-controlled electronic voting machine का आविष्कारकमध्ये एक, देशव्यापी media कभरेजसहित।' },
-      { year: '२००९', title: 'Master of IT', text: 'Information Technology मा स्नातकोत्तर। A ग्रेड, ८९.२५%, सिक्किम मणिपाल विश्वविद्यालय।' },
+      { year: '२००९', title: 'Master of Science in Information Technology (M.Sc. IT)', sub: 'सिक्किम मणिपाल विश्वविद्यालय · A ग्रेड · ८९.२५%', text: 'A ग्रेड र कुल ८९.२५% अङ्कसहित Information Technology मा Master of Science (M.Sc. IT) उपाधि हासिल गरेँ।' },
       { year: '२०११', title: 'CCNA certified', text: 'Cisco Certified Network Associate, Cisco Networks, USA।' },
       { year: 'अहिले', title: 'Made in Nepal लाई नयाँ परिभाषा', text: 'TechAsdy मार्फत ८,०००+ इन्जिनियर, हार्डवेयर प्राविधिक र विद्यार्थीहरूसँग DIY र robotics अभियानको नेतृत्व।' },
     ],
@@ -459,6 +462,7 @@ const np: Content = {
     videosTitle: 'Tech Asdy का थप भिडियोहरू',
     videosText: 'Workshop बाट छोटा builds र प्रयोगहरू।',
     follow: 'TikTok मा फलो गर्नुहोस्',
+    subscribe: 'YouTube मा subscribe गर्नुहोस्',
     videoTitle: 'Tech Asdy video',
   },
   workshops: {

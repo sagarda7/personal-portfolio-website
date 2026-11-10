@@ -9,7 +9,8 @@ export const links = {
   freelancer: 'https://www.freelancer.com/u/sagarda7?frm=sagarda7&sb=t',
   instructables: 'https://www.instructables.com/8X40-LED-MATRIX-CALENDAR-CLOCK/',
   // Add more and they will appear in the contact section automatically.
-  linkedin: '',
+  linkedin: 'https://www.linkedin.com/in/sagarda7/',
+  youtube: 'https://www.youtube.com/@TechAsdySolution',
   github: '',
   facebook: '',
 }
