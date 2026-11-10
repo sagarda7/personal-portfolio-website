@@ -189,7 +189,7 @@ const en = {
       { title: 'Robotics & Automation', text: 'CNC-style motion systems and pick-and-place machines designed and built in Nepal.', tags: ['Stepper control', 'Motion systems', 'DIY hardware'] },
       { title: 'Networking', text: 'CCNA-certified grounding in how devices, networks and services talk to each other.', tags: ['CCNA', 'Cisco', 'IoT', 'Protocols'] },
       { title: 'Web & Backend', text: 'Web systems and APIs since the PHP and MySQL days, connected to devices and mobile clients.', tags: ['PHP', 'MySQL', 'REST APIs'] },
-      { title: 'Teaching & Mentoring', text: 'Five years in academia as HOD and faculty, plus workshops in four countries.', tags: ['Curriculum', 'Workshops', 'Mentoring'] },
+      { title: 'Teaching & Mentoring', text: 'Five years in academia as Head of Department and faculty, and an active participant in international technology workshops in various countries.', tags: ['Curriculum', 'Workshops', 'Mentoring'] },
       { title: 'Electronics Design & Prototyping', text: 'Electronic device engineering from idea to working prototype: schematic and PCB design, PCB making, 3D mechanical design and enclosures.', tags: ['KiCad', 'EasyEDA', 'Fusion 360', 'SolidCraft', 'PCB making', 'Prototyping'] },
     ],
   },
@@ -223,7 +223,7 @@ const en = {
   workshops: {
     eyebrow: 'Workshops',
     title: 'Learning and sharing across Asia',
-    text: 'Participated in technology workshops in four countries.',
+    text: 'Active participant in international technology workshops, exchanging knowledge with engineers and educators across the region.',
     countries: ['Nepal', 'Singapore', 'Malaysia', 'Thailand'],
   },
   reviews: {
@@ -373,7 +373,7 @@ const np: Content = {
     intro: 'कक्षाकोठादेखि राष्ट्रिय समाचारसम्म निरन्तर उत्कृष्टता।',
     items: [
       { year: 'कक्षा १–१०', title: 'मान्छेहरू “फस्ट भाइ” भन्थे', text: 'स्कूले दिनदेखि आजसम्म साथ रहेको एउटा प्यारो उपनाम।' },
-      { year: 'वि.सं. २०५७', title: 'शैक्षिक उत्कृष्टता', text: 'जनजीवन माध्यमिक विद्यालय, माडी, नेपालबाट SLC Batch Topper को रूपमा सम्मानित (सन् २०००)।' },
+      { year: 'वि.सं. २०५७', title: 'शैक्षिक उत्कृष्टता', text: 'जनजीवन माध्यमिक विद्यालय, माडी, नेपालबाट SLC उत्तीर्ण गर्दै सोही विद्यालयको ब्याच टपर (Batch Topper) बन्न सफल (सन् २०००)।' },
       { year: '२००६', title: 'Electronic voting machine', text: 'Computer-controlled electronic voting machine का आविष्कारकमध्ये एक, देशव्यापी media कभरेजसहित।' },
       { year: '२००९', title: 'Master of Science in Information Technology (M.Sc. IT)', sub: 'सिक्किम मणिपाल विश्वविद्यालय · A ग्रेड · ८९.२५%', text: 'A ग्रेड र कुल ८९.२५% अङ्कसहित Information Technology मा Master of Science (M.Sc. IT) उपाधि हासिल गरेँ।' },
       { year: '२०११', title: 'CCNA certified', text: 'Cisco Certified Network Associate, Cisco Networks, USA।' },
@@ -434,7 +434,7 @@ const np: Content = {
       { title: 'Robotics र Automation', text: 'नेपालमै डिजाइन र निर्माण गरिएका CNC-style motion systems र pick-and-place machines।', tags: ['Stepper control', 'Motion systems', 'DIY hardware'] },
       { title: 'Networking', text: 'Devices, networks र services बीच कसरी कुरा हुन्छ भन्ने CCNA-certified आधार।', tags: ['CCNA', 'Cisco', 'IoT', 'Protocols'] },
       { title: 'Web र Backend', text: 'PHP र MySQL को समयदेखि devices र mobile clients सँग जोडिएका web systems र APIs।', tags: ['PHP', 'MySQL', 'REST APIs'] },
-      { title: 'शिक्षण र Mentoring', text: 'HOD र faculty को रूपमा पाँच वर्ष शैक्षिक क्षेत्रमा, साथै चार देशमा workshops।', tags: ['Curriculum', 'Workshops', 'Mentoring'] },
+      { title: 'शिक्षण र Mentoring', text: 'विभाग प्रमुख (HOD) र faculty को रूपमा पाँच वर्षको शैक्षिक अनुभव, साथै विभिन्न देशमा आयोजित अन्तर्राष्ट्रिय प्राविधिक workshops मा सक्रिय सहभागिता।', tags: ['Curriculum', 'Workshops', 'Mentoring'] },
       { title: 'Electronics Design र Prototyping', text: 'विचारदेखि चल्ने prototype सम्म electronic device engineering: schematic र PCB design, PCB making, 3D mechanical design र enclosure।', tags: ['KiCad', 'EasyEDA', 'Fusion 360', 'SolidCraft', 'PCB making', 'Prototyping'] },
     ],
   },
@@ -468,7 +468,7 @@ const np: Content = {
   workshops: {
     eyebrow: 'Workshops',
     title: 'एसियाभर सिक्दै र सिकाउँदै',
-    text: 'चार देशमा technology workshops मा सहभागिता।',
+    text: 'विभिन्न देशमा आयोजित अन्तर्राष्ट्रिय प्राविधिक workshops मा सक्रिय सहभागिता, जहाँ इन्जिनियर तथा शिक्षकहरूसँग ज्ञान आदानप्रदान गरेँ।',
     countries: ['नेपाल', 'सिंगापुर', 'मलेसिया', 'थाइल्याण्ड'],
   },
   reviews: {
