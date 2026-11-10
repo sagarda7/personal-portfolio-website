@@ -1,3 +1,4 @@
+# Host port can be overridden without editing this file, e.g.  PORTFOLIO_PORT=5108 make start-development
 name: portfolio-development
 services:
   portfolio-dev:
@@ -5,6 +6,7 @@ services:
       context: ../../
       dockerfile: docker/Dockerfile
     image: portfolio-dev
+    container_name: portfolio-dev
     ports:
-      - "5006:80"
+      - "${PORTFOLIO_PORT:-5006}:80"
     restart: unless-stopped

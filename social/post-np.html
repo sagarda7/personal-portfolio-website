@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="ne">
+<head>
+<meta charset="utf-8" />
+<title>Sagar Devkota social post (NP)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --primary: #00aeef;
+    --primary-dark: #0089bd;
+    --primary-50: #e6f7fd;
+    --secondary: #4b5563;
+    --crimson: #c8102e;
+    --gold: #a86b00;
+    --success: #28a745;
+    --ink: #1f2933;
+    --line: #e2e8f0;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; height: 1350px; }
+  body {
+    background: #fff; color: var(--ink); overflow: hidden;
+    font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+  }
+  .np { font-family: 'Noto Sans Devanagari', 'Inter', sans-serif; }
+  .canvas { position: relative; width: 1080px; height: 1350px; display: flex; flex-direction: column; }
+  .canvas > * { flex-shrink: 0; }
+
+  /* ---------- Photo + name ---------- */
+  .photo { position: relative; height: 385px; flex: none; overflow: hidden; }
+  .photo img { width: 100%; height: 100%; object-fit: cover; object-position: 30% 32%; display: block; }
+  .photo::after {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 40%, rgba(255,255,255,.88) 80%, #fff 100%);
+  }
+  .badge-top {
+    position: absolute; top: 30px; left: 44px; z-index: 2;
+    display: inline-flex; align-items: center; gap: 10px;
+    background: rgba(255,255,255,.95); border: 1px solid rgba(0,174,239,.25);
+    color: var(--primary-dark); font-weight: 600; font-size: 20px;
+    padding: 9px 18px; border-radius: 999px; box-shadow: 0 6px 20px rgba(15,23,42,.12);
+  }
+  .dot { width: 11px; height: 11px; border-radius: 50%; background: var(--success); box-shadow: 0 0 0 5px rgba(40,167,69,.18); }
+  .logo {
+    position: absolute; top: 24px; right: 36px; z-index: 2;
+    background: rgba(255,255,255,.95); border-radius: 14px; padding: 8px 14px;
+    box-shadow: 0 6px 20px rgba(15,23,42,.12);
+  }
+  .logo img { height: 40px; display: block; }
+
+  .head { position: relative; margin-top: -175px; padding: 0 48px; z-index: 2; }
+  .name { font-family: 'Plus Jakarta Sans', 'Noto Sans Devanagari', sans-serif; font-weight: 800; font-size: 62px; line-height: 1.1; letter-spacing: -1px; }
+  .name { color: #111827; }
+  .name span { color: var(--crimson); }
+  .tagline { margin-top: 4px; font-weight: 800; font-size: 40px; line-height: 1.2; background: linear-gradient(90deg, #8a5a00, #c99a2e 55%, #8a5a00); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .sub { margin-top: 2px; font-weight: 700; font-size: 30px; line-height: 1.25; color: #111827; }
+
+  /* ---------- Stats ---------- */
+  .stats {
+    margin: 16px 48px 0; display: grid; grid-template-columns: repeat(4, 1fr);
+    border: 1px solid var(--line); border-radius: 18px; overflow: hidden;
+    box-shadow: 0 8px 24px rgba(15,23,42,.06);
+  }
+  .stat { padding: 13px 8px 12px; text-align: center; border-right: 1px solid var(--line); }
+  .stat:last-child { border-right: 0; }
+  .stat b { display: block; font-weight: 800; font-size: 32px; color: var(--primary); line-height: 1.15; }
+  .stat small { display: block; margin-top: 2px; font-size: 15px; line-height: 1.3; color: var(--secondary); }
+
+  /* ---------- Highlights (compact list) ---------- */
+  .list { margin: 16px 48px 0; display: grid; grid-template-columns: 1fr 1fr; column-gap: 22px; row-gap: 9px; }
+  .li { display: flex; gap: 12px; align-items: flex-start; }
+  .ic {
+    flex: none; width: 40px; height: 40px; border-radius: 11px; display: grid; place-items: center;
+    background: var(--primary-50); color: var(--primary);
+  }
+  .ic svg { width: 21px; height: 21px; }
+  .li h3 { font-size: 18px; font-weight: 700; line-height: 1.25; }
+  .li p { font-size: 14.5px; line-height: 1.3; color: var(--secondary); }
+
+  /* ---------- Media / DIY / Publications ---------- */
+  .sect { margin: 14px 48px 9px; display: flex; align-items: center; gap: 14px; }
+  .sect h2 { font-size: 21px; font-weight: 700; color: var(--ink); white-space: nowrap; }
+  .sect .rule { flex: 1; height: 2px; background: linear-gradient(to right, var(--primary), transparent); border-radius: 2px; }
+  .tiles { margin: 0 48px; display: grid; grid-template-columns: repeat(5, 1fr); gap: 11px; }
+  .tile { border: 1px solid var(--line); border-radius: 16px; overflow: hidden; background: #fff; box-shadow: 0 6px 18px rgba(15,23,42,.06); }
+  .tile .img { position: relative; height: 180px; background: #f1f5f9; }
+  .tile img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .tag {
+    position: absolute; left: 7px; top: 7px; font-size: 11.5px; font-weight: 700; color: #fff;
+    background: var(--primary); padding: 3px 9px; border-radius: 999px;
+  }
+  .tag.green { background: var(--success); }
+  .tile .cap { padding: 8px 10px 10px; }
+  .tile h4 { font-size: 14.5px; font-weight: 700; line-height: 1.3; }
+  .tile p { font-size: 12.5px; line-height: 1.3; color: var(--secondary); margin-top: 1px; }
+
+
+  /* ---------- Reviews & comments ---------- */
+  .quotes { margin: 0 48px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .q { position: relative; border: 1px solid var(--line); border-radius: 16px; padding: 14px 14px 12px; background: #fff; box-shadow: 0 6px 18px rgba(15,23,42,.06); display: flex; flex-direction: column; }
+  .q.dark { background: #121212; border-color: #121212; color: #fff; }
+  .q blockquote { font-size: 15.5px; line-height: 1.42; font-weight: 500; color: var(--ink); flex: 1; }
+  .q.dark blockquote { color: rgba(255,255,255,.92); }
+  .q .who { margin-top: 10px; display: flex; align-items: center; gap: 9px; }
+  .av { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; flex: none; display: grid; place-items: center; font-weight: 700; color: #fff; font-size: 15px; }
+  .q .who b { display: block; font-size: 14.5px; font-weight: 700; line-height: 1.2; }
+  .q .who small { display: block; font-size: 12.5px; color: var(--secondary); line-height: 1.2; }
+  .q.dark .who small { color: rgba(255,255,255,.55); }
+  .stars { color: #f5a524; letter-spacing: 1px; font-size: 13px; }
+  .src { position: absolute; top: 12px; right: 12px; font-size: 11.5px; font-weight: 700; padding: 2px 8px; border-radius: 999px; }
+  .src.fl { background: #e8f1ff; color: #1d6ad6; }
+  .src.tt { background: rgba(255,255,255,.12); color: #fff; }
+
+  /* ---------- Footer ---------- */
+  .footer {
+    margin-top: auto; flex-shrink: 0; background: var(--primary); color: #fff;
+    padding: 18px 48px 20px; display: flex; align-items: center; justify-content: space-between; gap: 20px;
+  }
+  .footer .cta { font-weight: 700; font-size: 25px; line-height: 1.3; }
+  .footer .cta small { display: block; font-size: 16px; font-weight: 500; opacity: .9; }
+  .contacts { display: flex; flex-direction: column; gap: 5px; font-size: 17.5px; font-weight: 500; text-align: right; }
+  .contacts span { display: inline-flex; align-items: center; justify-content: flex-end; gap: 8px; }
+  .contacts svg { width: 17px; height: 17px; }
+</style>
+</head>
+<body>
+<div class="canvas">
+
+  <!-- Photo -->
+  <div class="photo">
+    <img src="../public/images/hero-2400.jpg" alt="" />
+    <div class="badge-top np"><span class="dot"></span>Lead Mobile Developer · Singapore Based Company</div>
+    <div class="logo"><img src="../public/images/techasdy-logo.png" alt="Tech Asdy" /></div>
+  </div>
+
+  <!-- Name -->
+  <div class="head np">
+    <h1 class="name">नमस्ते, म <span>सागर देवकोटा।</span></h1>
+    <p class="tagline">सिर्जना, नवप्रवर्तन र समाधान,</p>
+    <p class="sub">Embedded सिस्टमदेखि Software सम्म।</p>
+  </div>
+
+  <!-- Stats -->
+  <div class="stats np">
+    <div class="stat"><b>२०+</b><small>वर्ष प्रविधि क्षेत्रमा</small></div>
+    <div class="stat"><b>५०+</b><small>अन्तर्राष्ट्रिय projects</small></div>
+    <div class="stat"><b>८,०००+</b><small>इन्जिनियर, प्राविधिक र विद्यार्थी</small></div>
+    <div class="stat"><b>४.९★</b><small>Freelancer client rating</small></div>
+  </div>
+
+  <!-- Highlights -->
+  <div class="list np">
+    <div class="li">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></svg></div>
+      <div><h3>शैक्षिक उत्कृष्टता</h3><p>जनजीवन माध्यमिक विद्यालय, माडी, नेपालबाट SLC उत्तीर्ण गर्दै सोही विद्यालयको ब्याच टपर (Batch Topper) बन्न सफल (सन् २०००)</p></div>
+    </div>
+    <div class="li">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+      <div><h3>M.Sc. IT (A ग्रेड, ८९.२५%)</h3><p>सिक्किम मणिपाल विश्वविद्यालय (सन् २००९)</p></div>
+    </div>
+    <div class="li">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="16" y="16" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="9" y="2" width="6" height="6" rx="1"/><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3M12 12V8"/></svg></div>
+      <div><h3>CCNA Certified (सन् २०११)</h3><p>Cisco Networks, USA</p></div>
+    </div>
+    <div class="li">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z"/><path d="M12 6v6l4 2"/></svg></div>
+      <div><h3>शिक्षण अनुभव (२००९–२०१४)</h3><p>Computer Science विभाग प्रमुख, कुमुदिनी होम्स · faculty, कन्या क्याम्पस र LA Grandee International College, पोखरा</p></div>
+    </div>
+    <div class="li">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/></svg></div>
+      <div><h3>पहिलो Made in Nepal component tester</h3><p>Multifunction electronic component tester</p></div>
+    </div>
+    <div class="li">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09zM12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></div>
+      <div><h3>Tech Asdy: Made in Nepal र DIY</h3><p>हार्डवेयर, IoT र रोबोटिक्स अभियान</p></div>
+    </div>
+  </div>
+
+  <!-- Media, DIY, Publications -->
+  <div class="sect np"><h2>मिडिया, DIY र प्रकाशन</h2><div class="rule"></div></div>
+  <div class="tiles np">
+    <div class="tile">
+      <div class="img"><img src="../public/images/voting-machine.jpg" alt="" style="object-position: 52% 70%" /><span class="tag">समाचारमा · २००६</span></div>
+      <div class="cap"><h4>Electronic voting machine</h4><p>राष्ट्रिय पत्रपत्रिकामा कभरेज</p></div>
+    </div>
+    <div class="tile">
+      <div class="img"><img src="../public/images/pick-and-place.png" alt="" style="object-position: 50% 0%" /><span class="tag green">DIY · रोबोटिक्स</span></div>
+      <div class="cap"><h4>Pick &amp; place मेसिन</h4><p>नेपालमै डिजाइन र निर्माण</p></div>
+    </div>
+    <div class="tile">
+      <div class="img"><img src="../public/images/igbt-tester.jpg" alt="" style="object-position: 40% 50%" /><span class="tag green">Made in Nepal</span></div>
+      <div class="cap"><h4>Multi-function tester</h4><p>IGBT, MOSFET र अन्य</p></div>
+    </div>
+    <div class="tile">
+      <div class="img"><img src="../public/images/book.jpg" alt="" style="object-position: 50% 42%" /><span class="tag">पुस्तक · २००६</span></div>
+      <div class="cap"><h4>Advanced Web Programming Using PHP</h4><p>Asia Publications, काठमाडौँ</p></div>
+    </div>
+    <div class="tile">
+      <div class="img"><img src="../public/images/led-matrix-clock.jpg" alt="" style="object-position: 50% 70%" /><span class="tag">Instructables</span></div>
+      <div class="cap"><h4>8×40 LED Matrix Clock</h4><p>सन् २०१५ · ९,८६८+ views</p></div>
+    </div>
+  </div>
+
+
+  <!-- Reviews & comments -->
+  <div class="sect np"><h2>Clients र समुदायको प्रतिक्रिया</h2><div class="rule"></div></div>
+  <div class="quotes">
+    <div class="q">
+      <span class="src fl">Freelancer</span>
+      <div class="stars">★★★★★</div>
+      <blockquote>“I have worked with many developers over the years and he is one I consider to be one of the best!”</blockquote>
+      <div class="who"><span class="av" style="background:#1d6ad6">K</span><div><b>Keith</b><small>🇺🇸 USA · Arduino + BLE app</small></div></div>
+    </div>
+    <div class="q">
+      <span class="src fl">Freelancer</span>
+      <div class="stars">★★★★★</div>
+      <blockquote>“Sagar is a genius. He has best knowledge about this field. He has done my project perfectly.”</blockquote>
+      <div class="who"><span class="av" style="background:#1d6ad6">D</span><div><b>Direct</b><small>🇱🇰 Sri Lanka · Arduino Engineer</small></div></div>
+    </div>
+    <div class="q dark">
+      <span class="src tt">TikTok</span>
+      <div class="stars" style="color:#fe2c55">♥ Tech Asdy</div>
+      <blockquote>“I am proud of every small and big scale automation and robotics application in Nepal. You are building a better future for my children.🥰”</blockquote>
+      <div class="who"><span class="av" style="background:#fe2c55">A</span><div><b>Alice Bomjan</b><small>Tech Asdy community</small></div></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer np">
+    <div class="cta">सँगै केही बनाऔँ<small>Mobile · Embedded · IoT · Robotics</small></div>
+    <div class="contacts">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>sagarda7@gmail.com</span>
+      <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.05 2a9.9 9.9 0 0 0-8.5 15l-1.4 5 5.2-1.36A9.9 9.9 0 1 0 12.05 2zm5.8 13.97c-.25.69-1.43 1.32-2 1.41-.51.08-1.16.11-1.87-.12a17 17 0 0 1-1.69-.63c-2.98-1.290-4.930-4.290-5.080-4.490-.14-.2-1.21-1.620-1.210-3.080s.77-2.180 1.040-2.480c.27-.3.59-.37.79-.37h.57c.18.01.43-.07.67.51.25.59.84 2.05.92 2.2.07.15.12.32.02.52-.1.2-.15.33-.3.5-.15.17-.31.39-.45.52-.15.14-.3.3-.13.6.17.3.77 1.27 1.65 2.06 1.13 1.01 2.08 1.32 2.38 1.47.29.15.47.13.64-.07.17-.2.74-.86.94-1.16.2-.3.4-.25.67-.15.27.1 1.72.81 2.02.96.3.15.5.22.57.34.08.12.08.72-.17 1.410z"/></svg>+977 985-6032592</span>
+      <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 1 1-1.84-2.48V9.66a5.68 5.68 0 1 0 4.92 5.67V9.01a7.33 7.33 0 0 0 4.29 1.38V7.3a4.28 4.28 0 0 1-3.22-1.48Z"/></svg>@techasdysolution · in/sagarda7</span>
+    </div>
+  </div>
+</div>
+</body>
+</html>

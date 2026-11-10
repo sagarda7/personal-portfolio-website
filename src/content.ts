@@ -48,7 +48,7 @@ const en = {
     paragraphs: [
       'Born in Kaski in 1985 and raised in Chitwan, I’m a small-town boy who still remembers his school days: from grade 1 to grade 10 I came first in class every single year (“First Bhai”, as we say in Nepal), right through to becoming the **batch topper in the SLC (2057 B.S.) at Jan Jivan Secondary School, Madi**. By 2006 I had co-authored a programming book and helped build a computer-controlled electronic voting machine that made national headlines.',
       'I completed my **Master’s in IT in 2009** and earned my **CCNA from Cisco Networks, USA in 2011**. From 2009 to 2014 I worked in academia as Head of Computer Science at Kumudini Homes, Pokhara, and as faculty at Kanya Campus and LA Grandee International College, while also leading more than 50 software projects for international clients.',
-      'I then worked as a Senior Fullstack Developer at AndMine and now lead mobile development at **FieldEx Singapore**. I know computers and embedded systems down to the architecture, so I can take a product from circuit board to app store. Through **Tech Asdy** I’m redefining Made in Nepal and DIY culture with a community of 8,000+ engineers, hardware techs and students.',
+      'I then worked as a Senior Fullstack Developer and Team Leader at AndMine (an Australia-based company) and now lead mobile development at **FieldEx Singapore**. I know computers and embedded systems down to the architecture, so I can take a product from circuit board to app store. Through **Tech Asdy** I’m redefining Made in Nepal and DIY culture with a community of 8,000+ engineers, hardware techs and students.',
     ],
     facts: [
       { label: 'Education', value: 'Master of IT, Sikkim Manipal University, 2009 (A grade)' },
@@ -76,9 +76,9 @@ const en = {
         tags: ['Java', 'Kotlin', 'Swift', 'React Native', 'WatermelonDB', 'Realm', 'MVVM', 'Dagger', 'Firebase', 'Docker', 'IoT', 'MQTT'],
       },
       {
-        role: 'Senior Fullstack Developer',
-        org: 'AndMine Pte. Ltd.',
-        place: 'AndMine Nepal',
+        role: 'Senior Fullstack Developer, Team Leader',
+        org: 'AndMine (Australia based company)',
+        place: 'Nepal office',
         period: '2014 – 2016',
         points: [
           'All-Rounder Performer of the Year.',
@@ -168,7 +168,7 @@ const en = {
     book: {
       tag: 'Book · 2006',
       title: 'Advanced Web Programming Using PHP',
-      text: 'Co-authored with Hemanta Baral. A practical guide to PHP with MySQL and Dreamweaver MX for students and new developers.',
+      text: 'Co-authored with Hemanta Baral and published by Asia Publications, Kathmandu (2006). A practical guide to PHP with MySQL and Dreamweaver MX for students and new developers.',
       alt: 'Advanced Web Programming Using PHP book cover',
     },
     instructable: {
@@ -289,11 +289,11 @@ const np: Content = {
   ],
   about: {
     eyebrow: 'परिचय',
-    title: ['सफ्टवेयरदेखि हार्डवेयर र 20+ वर्ष अनुभव ', 'नवप्रवर्तक | प्रविधि विज्ञ', '।'],
+    title: ['सफ्टवेयरदेखि हार्डवेयर र 20+ वर्ष अनुभव ', 'नवप्रवर्तक | प्रविधिमा विज्ञता', '।'],
     paragraphs: [
       'विद्यालय जीवन मेरा लागि सधैँ उत्कृष्टता र निरन्तर उपलब्धिको यात्रा रह्यो। कक्षा १ देखि १० सम्मको शैक्षिक यात्रामा प्रथम स्थानको निरन्तरतासँगै जनजीवन माध्यमिक विद्यालय, माडीबाट वि.सं. २०५७ को SLC परीक्षामा ब्याच टपर बन्ने अवसर पाएँ। सन् २००६ सम्ममा मैले programming सम्बन्धी पुस्तक सह-लेखन गरिसकेको थिएँ र राष्ट्रिय सञ्चारमाध्यममा विशेष चर्चा पाएको computer-controlled electronic voting machine निर्माणमा सहभागी भइसकेको थिएँ।',
       'सन् २००९ मा **Master’s in IT(MscIT)** पूरा गरेँ र सन् २०११ मा **Cisco Networks, USA बाट CCNA** प्राप्त गरेँ। सन् २००९ देखि २०१४ सम्म कुमुदिनी होम्स, पोखरामा Computer Science विभाग प्रमुख (HOD) तथा कन्या क्याम्पस र LA Grandee International College मा faculty member को रूपमा शैक्षिक क्षेत्रमा काम गरेँ। सँगसँगै अन्तर्राष्ट्रिय clients का ५० भन्दा बढी software projects को नेतृत्व गरेँ।',
-      'त्यसपछि AndMine मा Senior Fullstack Developer को रूपमा काम गरेँ र अहिले **FieldEx Singapore** मा mobile development को नेतृत्व गर्दैछु। Computer र embedded systems को architecture सम्मको गहिरो ज्ञानले गर्दा म circuit board देखि app store सम्म पूरा product बनाउन सक्छु। **TechAsdy** मार्फत ८,०००+ इन्जिनियर, हार्डवेयर प्राविधिक र विद्यार्थीहरूको समुदायसँग Made in Nepal र DIY संस्कृतिलाई नयाँ परिभाषा दिँदैछु।',
+      'त्यसपछि अस्ट्रेलियामा आधारित कम्पनी AndMine मा Senior Fullstack Developer तथा Team Leader को रूपमा काम गरेँ र अहिले **FieldEx Singapore** मा mobile development को नेतृत्व गर्दैछु। Computer र embedded systems को architecture सम्मको गहिरो ज्ञानले गर्दा म circuit board देखि app store सम्म पूरा product बनाउन सक्छु। **TechAsdy** मार्फत ८,०००+ इन्जिनियर, हार्डवेयर प्राविधिक र विद्यार्थीहरूको समुदायसँग Made in Nepal र DIY संस्कृतिलाई नयाँ परिभाषा दिँदैछु।',
     ],
     facts: [
       { label: 'शिक्षा', value: 'Master of Science in IT(MscIT), सिक्किम मणिपाल विश्वविद्यालय, सन् २००९ (A ग्रेड)' },
@@ -321,9 +321,9 @@ const np: Content = {
         tags: ['Java', 'Kotlin', 'Swift', 'React Native', 'WatermelonDB', 'Realm', 'MVVM', 'Dagger', 'Firebase', 'Docker', 'IoT', 'MQTT'],
       },
       {
-        role: 'Senior Fullstack Developer',
-        org: 'AndMine Pte. Ltd.',
-        place: 'AndMine नेपाल',
+        role: 'Senior Fullstack Developer, Team Leader',
+        org: 'AndMine (अस्ट्रेलियामा आधारित कम्पनी)',
+        place: 'नेपाल कार्यालय',
         period: '२०१४ – २०१६',
         points: [
           'वर्षकै उत्कृष्ट All-Rounder Performer।',
@@ -372,7 +372,7 @@ const np: Content = {
     title: 'यात्राका कोसेढुङ्गाहरू',
     intro: 'कक्षाकोठादेखि राष्ट्रिय समाचारसम्म निरन्तर उत्कृष्टता।',
     items: [
-      { year: 'कक्षा १–१०', title: 'मान्छेहरू “फस्ट भाइ” भन्थे', text: 'स्कूले दिनदेखि आजसम्म साथ रहेको एउटा प्यारो उपनाम।' },
+      { year: 'कक्षा १–१०', title: 'सानोमा सबैले “फस्ट भाइ” भन्थे', text: 'स्कूले दिनका सम्झनासँगै आजसम्म साथ रहेको एउटा प्यारो उपनाम।' },
       { year: 'वि.सं. २०५७', title: 'शैक्षिक उत्कृष्टता', text: 'जनजीवन माध्यमिक विद्यालय, माडी, नेपालबाट SLC उत्तीर्ण गर्दै सोही विद्यालयको ब्याच टपर (Batch Topper) बन्न सफल (सन् २०००)।' },
       { year: '२००६', title: 'Electronic voting machine', text: 'Computer-controlled electronic voting machine का आविष्कारकमध्ये एक, देशव्यापी media कभरेजसहित।' },
       { year: '२००९', title: 'Master of Science in Information Technology (M.Sc. IT)', sub: 'सिक्किम मणिपाल विश्वविद्यालय · A ग्रेड · ८९.२५%', text: 'A ग्रेड र कुल ८९.२५% अङ्कसहित Information Technology मा Master of Science (M.Sc. IT) उपाधि हासिल गरेँ।' },
@@ -413,7 +413,7 @@ const np: Content = {
     book: {
       tag: 'पुस्तक · २००६',
       title: 'Advanced Web Programming Using PHP',
-      text: 'हेमन्त बरालसँग सह-लेखन। विद्यार्थी र नयाँ developers का लागि PHP, MySQL र Dreamweaver MX को व्यावहारिक गाइड।',
+      text: 'हेमन्त बरालसँग सह-लेखन, Asia Publications, काठमाडौँद्वारा प्रकाशित (सन् २००६)। विद्यार्थी र नयाँ developers का लागि PHP, MySQL र Dreamweaver MX को व्यावहारिक गाइड।',
       alt: 'Advanced Web Programming Using PHP पुस्तकको आवरण',
     },
     instructable: {

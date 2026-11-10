@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ne">
+<head>
+<meta charset="utf-8" />
+<title>Sagar Devkota Facebook post (NP)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  /* Facebook mobile version: 1080x1350 (4:5), large type so it reads at ~390px phone width. */
+  :root {
+    --primary: #00aeef;
+    --primary-dark: #0089bd;
+    --primary-50: #e6f7fd;
+    --secondary: #374151;
+    --success: #28a745;
+    --ink: #111827;
+    --crimson: #c8102e;
+    --line: #dbe3ec;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; height: 1350px; }
+  body { background: #fff; color: var(--ink); overflow: hidden; font-family: 'Noto Sans Devanagari', 'Inter', sans-serif; }
+  .canvas { position: relative; width: 1080px; height: 1350px; display: flex; flex-direction: column; }
+  .canvas > * { flex-shrink: 0; }
+
+  /* ---------- Photo + headline ---------- */
+  .photo { position: relative; height: 396px; overflow: hidden; }
+  .photo img { width: 100%; height: 100%; object-fit: cover; object-position: 28% 55%; display: block; }
+  .photo::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(255,255,255,0) 35%, rgba(255,255,255,.9) 78%, #fff 100%); }
+  .logo { position: absolute; top: 26px; right: 32px; z-index: 2; background: rgba(255,255,255,.96); border-radius: 16px; padding: 10px 16px; box-shadow: 0 6px 20px rgba(15,23,42,.15); }
+  .logo img { height: 50px; display: block; }
+  .role {
+    position: absolute; top: 30px; left: 40px; z-index: 2;
+    display: inline-flex; align-items: center; gap: 10px;
+    background: rgba(255,255,255,.96); color: var(--primary-dark);
+    font-weight: 700; font-size: 24px; padding: 10px 20px; border-radius: 999px;
+    box-shadow: 0 6px 20px rgba(15,23,42,.15);
+  }
+  .dot { width: 13px; height: 13px; border-radius: 50%; background: var(--success); box-shadow: 0 0 0 5px rgba(40,167,69,.2); }
+
+  .head { position: relative; z-index: 2; margin-top: -185px; padding: 0 44px; }
+  .name { font-family: 'Plus Jakarta Sans', 'Noto Sans Devanagari', sans-serif; font-weight: 800; font-size: 68px; line-height: 1.12; letter-spacing: -1px; }
+  .name span { color: var(--crimson); }
+  .tagline { margin-top: 4px; font-weight: 800; font-size: 44px; line-height: 1.2; background: linear-gradient(90deg, #8a5a00, #c99a2e 55%, #8a5a00); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .sub { margin-top: 2px; font-weight: 700; font-size: 34px; line-height: 1.25; }
+
+  /* ---------- Stats ---------- */
+  .stats { margin: 18px 44px 0; display: grid; grid-template-columns: repeat(4, 1fr); border: 2px solid var(--line); border-radius: 22px; overflow: hidden; background: #fff; }
+  .stat { padding: 11px 6px 11px; text-align: center; border-right: 2px solid var(--line); }
+  .stat:last-child { border-right: 0; }
+  .stat b { display: block; font-weight: 800; font-size: 46px; line-height: 1.1; color: var(--primary); }
+  .stat small { display: block; margin-top: 4px; font-size: 20px; font-weight: 600; line-height: 1.25; color: var(--secondary); }
+
+  /* ---------- Highlights ---------- */
+  .list { margin: 18px 44px 0; display: grid; grid-template-columns: 1fr 1fr; column-gap: 18px; row-gap: 10px; }
+  .li { display: flex; gap: 14px; align-items: center; background: #f6f9fc; border: 2px solid #edf2f7; border-radius: 18px; padding: 8px 16px; }
+  .ic { flex: none; width: 50px; height: 50px; border-radius: 13px; display: grid; place-items: center; background: var(--primary); color: #fff; }
+  .ic svg { width: 27px; height: 27px; }
+  .li h3 { font-size: 25px; font-weight: 800; line-height: 1.2; }
+  .li p { font-size: 19px; font-weight: 600; line-height: 1.3; color: var(--secondary); }
+
+  /* ---------- Photos ---------- */
+  .tiles { margin: 16px 44px 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .tile { border-radius: 20px; overflow: hidden; border: 2px solid var(--line); background: #fff; }
+  .tile .img { position: relative; height: 104px; }
+  .tile img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .tag { position: absolute; left: 10px; top: 10px; font-size: 18px; font-weight: 800; color: #fff; background: var(--crimson); padding: 4px 12px; border-radius: 999px; }
+  .tag.blue { background: var(--primary-dark); }
+  .tile h4 { padding: 8px 14px 10px; font-size: 23px; font-weight: 800; line-height: 1.2; }
+
+
+  /* ---------- TikTok comments ---------- */
+  .comments { margin: 14px 44px 0; background: #121212; border-radius: 22px; padding: 12px 18px 14px; color: #fff; }
+  .comments .hd { display: flex; align-items: center; justify-content: space-between; font-size: 20px; font-weight: 700; color: rgba(255,255,255,.75); }
+  .comments .hd b { color: #fe2c55; }
+  .comments .row { margin-top: 8px; display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .cm { display: flex; gap: 12px; }
+  .cm .av { flex: none; width: 42px; height: 42px; border-radius: 50%; object-fit: cover; display: grid; place-items: center; font-weight: 800; font-size: 21px; color: #fff; }
+  .cm .nm { font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 600; color: rgba(255,255,255,.6); }
+  .cm .tx { font-family: 'Inter', 'Noto Sans Devanagari', sans-serif; font-size: 19.5px; font-weight: 500; line-height: 1.35; color: #fff; margin-top: 2px; }
+
+  /* ---------- Footer ---------- */
+  .footer { margin-top: auto; background: var(--primary); color: #fff; padding: 16px 44px 16px; }
+  .footer .top { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .cta { font-weight: 800; font-size: 32px; line-height: 1.15; }
+  .cta small { display: block; margin-top: 3px; font-size: 20px; font-weight: 600; opacity: .95; }
+  .wa { display: inline-flex; align-items: center; gap: 10px; font-family: 'Inter', sans-serif; font-size: 28px; font-weight: 800; }
+  .wa svg { width: 28px; height: 28px; }
+  .social { margin-top: 12px; padding-top: 12px; border-top: 1.5px solid rgba(255,255,255,.35); display: flex; justify-content: space-between; gap: 12px; font-family: 'Inter', sans-serif; font-size: 19.5px; font-weight: 700; }
+  .social span { display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; }
+  .social svg { width: 22px; height: 22px; flex: none; }
+</style>
+</head>
+<body>
+<div class="canvas">
+
+  <div class="photo">
+    <img src="../public/images/hero-2400.jpg" alt="" />
+    <div class="role"><span class="dot"></span>Lead Mobile Developer · Singapore Based Company</div>
+    <div class="logo"><img src="../public/images/techasdy-logo.png" alt="Tech Asdy" /></div>
+  </div>
+
+  <div class="head">
+    <h1 class="name">नमस्ते, म <span>सागर देवकोटा।</span></h1>
+    <p class="tagline">सिर्जना, नवप्रवर्तन र समाधान,</p>
+    <p class="sub">Embedded सिस्टमदेखि Software सम्म।</p>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><b>२०+</b><small>वर्षको अनुभव</small></div>
+    <div class="stat"><b>५०+</b><small>अन्तर्राष्ट्रिय projects</small></div>
+    <div class="stat"><b>८,०००+</b><small>प्राविधिक समुदाय</small></div>
+    <div class="stat"><b>४.९★</b><small>Client rating</small></div>
+  </div>
+
+  <div class="list">
+    <div class="li">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></svg></div>
+      <div><h3>शैक्षिक उत्कृष्टता</h3><p>जनजीवन माध्यमिक विद्यालय, माडी, नेपालबाट SLC उत्तीर्ण गर्दै सोही विद्यालयको ब्याच टपर (Batch Topper) बन्न सफल (सन् २०००)</p></div>
+    </div>
+    <div class="li">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+      <div><h3>M.Sc. IT · A ग्रेड</h3><p>सिक्किम मणिपाल वि.वि. · सन् २००९</p></div>
+    </div>
+    <div class="li">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="16" y="16" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="9" y="2" width="6" height="6" rx="1"/><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3M12 12V8"/></svg></div>
+      <div><h3>CCNA Certified</h3><p>Cisco Networks, USA · सन् २०११</p></div>
+    </div>
+    <div class="li">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+      <div><h3>पुस्तक लेखक · सन् २००६</h3><p>Advanced Web Programming Using PHP<br />Asia Publications, काठमाडौँ</p></div>
+    </div>
+    <div class="li">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z"/><path d="M12 6v6l4 2"/></svg></div>
+      <div><h3>पूर्व HOD, Computer Science</h3><p>कुमुदिनी होम्स, पोखरा · २००९–२०१४</p></div>
+    </div>
+    <div class="li">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/></svg></div>
+      <div><h3>Voting machine आविष्कार</h3><p>सन् २००६ · राष्ट्रिय समाचारमा</p></div>
+    </div>
+  </div>
+
+  <div class="tiles">
+    <div class="tile">
+      <div class="img"><img src="../public/images/igbt-tester.jpg" alt="" style="object-position: 40% 50%" /><span class="tag">Made in Nepal</span></div>
+      <h4>Multi-function tester</h4>
+    </div>
+    <div class="tile">
+      <div class="img"><img src="../public/images/pick-and-place.png" alt="" style="object-position: 50% 26%" /><span class="tag">Made in Nepal</span></div>
+      <h4>Pick &amp; place मेसिन</h4>
+    </div>
+    <div class="tile">
+      <div class="img"><img src="../public/images/voting-machine.jpg" alt="" style="object-position: 52% 72%" /><span class="tag blue">समाचारमा · २००६</span></div>
+      <h4>Voting machine</h4>
+    </div>
+  </div>
+
+
+  <div class="comments">
+    <div class="hd"><span>TikTok मा समुदायको प्रतिक्रिया</span><b>♥ हजारौँ comments</b></div>
+    <div class="row">
+      <div class="cm">
+        <span class="av" style="background:#fe2c55">A</span>
+        <div><div class="nm">Alice Bomjan</div><div class="tx">“Thank you brothers and sisters you are building a better future for my children.🥰”</div></div>
+      </div>
+      <div class="cm">
+        <img class="av" src="../public/images/comments/samir.jpg" alt="" />
+        <div><div class="nm">SAMIR</div><div class="tx">“Yasto yasto masxe lai khojher sarkar le help garnu paro protsahan harnu paro hai 🫶💐”</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="top">
+      <div class="cta">सँगै केही बनाऔँ<small>Mobile · Embedded · IoT · Robotics</small></div>
+      <div class="wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.05 2a9.9 9.9 0 0 0-8.5 15l-1.4 5 5.2-1.36A9.9 9.9 0 1 0 12.05 2zm5.8 13.97c-.25.69-1.43 1.32-2 1.41-.51.08-1.16.11-1.87-.12a17 17 0 0 1-1.69-.63c-2.98-1.29-4.93-4.29-5.08-4.49-.14-.2-1.21-1.62-1.21-3.08s.77-2.18 1.04-2.48c.27-.3.59-.37.79-.37h.57c.18.01.43-.07.67.51.25.59.84 2.05.92 2.2.07.15.12.32.02.52-.1.2-.15.33-.3.5-.15.17-.31.39-.45.52-.15.14-.3.3-.13.6.17.3.77 1.27 1.65 2.06 1.13 1.01 2.08 1.32 2.38 1.47.29.15.47.13.64-.07.17-.2.74-.86.94-1.16.2-.3.4-.25.67-.15.27.1 1.72.81 2.02.96.3.15.5.22.57.34.08.12.08.72-.17 1.41z"/></svg>+977 985-6032592</div>
+    </div>
+    <div class="social">
+      <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 1 1-1.84-2.48V9.66a5.68 5.68 0 1 0 4.92 5.67V9.01a7.33 7.33 0 0 0 4.29 1.38V7.3a4.28 4.28 0 0 1-3.22-1.48Z"/></svg>@techasdysolution</span>
+      <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31.3 31.3 0 0 0 0 12a31.3 31.3 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.3 31.3 0 0 0 24 12a31.3 31.3 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.2 3.6-6.2 3.6Z"/></svg>@TechAsdySolution</span>
+      <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>in/sagarda7</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>sagarda7@gmail.com</span>
+    </div>
+  </div>
+</div>
+</body>
+</html>
