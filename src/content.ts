@@ -18,16 +18,16 @@ const en = {
     switchTo: 'नेपालीमा हेर्नुहोस्',
   },
   hero: {
-    badge: 'Lead Mobile Developer at FieldEx Singapore',
+    badge: 'Lead Mobile Developer at FieldEx',
     greeting: 'Hi, I’m Sagar.',
-    headline: 'Tech expert & problem solver,',
-    headlineSub: 'fluent from embedded systems to software.',
+    headline: 'I Build, Innovate and Solve.',
+    headlineSub: 'Embedded systems to software.',
     summary:
       'I lead mobile engineering at FieldEx, hold a CCNA, and know embedded systems down to the architecture. I’ve completed 100+ projects for international clients. Now I’m redefining Made in Nepal and DIY culture with 8,000+ engineers, hardware techs and students through Tech Asdy.',
     roles: ['Lead Mobile Developer', 'Embedded Systems Engineer', 'CCNA Certified', 'Author & Educator', 'Made in Nepal Advocate'],
     ctaPrimary: 'View my journey',
     ctaSecondary: 'Get in touch',
-    location: 'Nepal · Singapore',
+    location: 'Nepal · Malaysia . Singapore',
     photoAlt: 'Portrait of Sagar Devkota',
     badges: {
       slc: ['SLC Batch Topper · 2057 B.S.', 'Jan Jivan Secondary School, Madi'],
@@ -64,13 +64,13 @@ const en = {
     items: [
       {
         role: 'Lead Mobile Developer',
-        org: 'FieldEx',
-        place: 'Singapore (previously FieldEx Malaysia)',
+        org: 'FieldEx Pte Ltd',
+        place: 'Singapore (previously FieldEx SDN BHD)',
         period: '2016 – Present',
         current: true,
         points: [
           'Leads mobile development for the FieldEx field service management platform.',
-          'Joined through FieldEx Malaysia and continues with FieldEx Singapore.',
+          'Joined through FieldEx Malaysia and continues with FieldEx.',
         ],
         tags: ['Java', 'Kotlin', 'Swift', 'React Native', 'WatermelonDB', 'Realm', 'MVVM', 'Dagger', 'Firebase', 'Docker', 'IoT', 'MQTT'],
       },
@@ -263,8 +263,8 @@ const np: Content = {
   hero: {
     badge: 'FieldEx Singapore मा Lead Mobile Developer',
     greeting: 'नमस्ते, म सागर।',
-    headline: 'प्रविधि विज्ञ र समस्या समाधानकर्ता,',
-    headlineSub: 'एम्बेडेड सिस्टमदेखि सफ्टवेयरसम्म।',
+    headline: 'सिर्जना, नवप्रवर्तन र समाधान,',
+    headlineSub: 'Embedded सिस्टमदेखि Software सम्म।',
     summary:
       'म FieldEx मा मोबाइल इन्जिनियरिङ टोलीको नेतृत्व गर्दै आएको छु। म CCNA प्रमाणित प्राविधिक हुँ र एम्बेडेड प्रणालीहरूको आर्किटेक्चर तहसम्म गहिरो प्राविधिक ज्ञान राख्छु। अन्तर्राष्ट्रिय ग्राहकहरूका 100 भन्दा बढी परियोजनाहरूको सफल नेतृत्व गरिसकेको छु। साथै, TechAsdy DIY & Robotics मार्फत ८,००० भन्दा बढी इन्जिनियर, हार्डवेयर प्राविधिक तथा विद्यार्थीहरूलाई जोड्दै ‘Made in Nepal’ र ‘आफैँ बनाऔँ’ (DIY) संस्कृतिलाई नयाँ पहिचान दिने अभियानमा सक्रिय छु।',
     roles: ['Lead Mobile Developer', 'Embedded Systems Engineer', 'CCNA Certified', 'लेखक र शिक्षक', 'Made in Nepal अभियन्ता'],
@@ -287,14 +287,14 @@ const np: Content = {
   ],
   about: {
     eyebrow: 'परिचय',
-    title: ['सफ्टवेयरदेखि हार्डवेयर र सिलिकन चिपसम्म बुझ्ने ', 'प्रविधि विज्ञ', '।'],
+    title: ['सफ्टवेयरदेखि हार्डवेयर र 20+ वर्ष अनुभव ', 'नवप्रवर्तक | प्रविधि विज्ञ', '।'],
     paragraphs: [
-      'सन् १९८५ मा कास्कीमा जन्मिएँ र चितवनमा हुर्किएँ। कक्षा १ देखि १० सम्म लगातार फस्ट भई **जनजीवन माध्यमिक विद्यालय, माडीबाट SLC (वि.सं. २०५७) मा batch topper** बनेका ती स्कूले दिनहरू म अझै सम्झन्छु। सन् २००६ सम्ममा मैले programming सम्बन्धी पुस्तक सह-लेखन गरिसकेको थिएँ र राष्ट्रिय समाचारमा छाएको computer-controlled electronic voting machine निर्माणमा सहभागी भइसकेको थिएँ।',
-      'सन् २००९ मा **Master’s in IT** पूरा गरेँ र सन् २०११ मा **Cisco Networks, USA बाट CCNA** प्राप्त गरेँ। सन् २००९ देखि २०१४ सम्म कुमुदिनी होम्स, पोखरामा Computer Science विभाग प्रमुख (HOD) तथा कन्या क्याम्पस र LA Grandee International College मा faculty को रूपमा शैक्षिक क्षेत्रमा काम गरेँ। सँगसँगै अन्तर्राष्ट्रिय clients का ५० भन्दा बढी software projects को नेतृत्व गरेँ।',
+      'विद्यालय जीवन मेरा लागि सधैँ उत्कृष्टता र निरन्तर उपलब्धिको यात्रा रह्यो। कक्षा १ देखि १० सम्मको शैक्षिक यात्रामा प्रथम स्थानको निरन्तरतासँगै जनजीवन माध्यमिक विद्यालय, माडीबाट वि.सं. २०५७ को SLC परीक्षामा ब्याच टपर बन्ने अवसर पाएँ। सन् २००६ सम्ममा मैले programming सम्बन्धी पुस्तक सह-लेखन गरिसकेको थिएँ र राष्ट्रिय सञ्चारमाध्यममा विशेष चर्चा पाएको computer-controlled electronic voting machine निर्माणमा सहभागी भइसकेको थिएँ।',
+      'सन् २००९ मा **Master’s in IT(MscIT)** पूरा गरेँ र सन् २०११ मा **Cisco Networks, USA बाट CCNA** प्राप्त गरेँ। सन् २००९ देखि २०१४ सम्म कुमुदिनी होम्स, पोखरामा Computer Science विभाग प्रमुख (HOD) तथा कन्या क्याम्पस र LA Grandee International College मा faculty member को रूपमा शैक्षिक क्षेत्रमा काम गरेँ। सँगसँगै अन्तर्राष्ट्रिय clients का ५० भन्दा बढी software projects को नेतृत्व गरेँ।',
       'त्यसपछि AndMine मा Senior Fullstack Developer को रूपमा काम गरेँ र अहिले **FieldEx Singapore** मा mobile development को नेतृत्व गर्दैछु। Computer र embedded systems को architecture सम्मको गहिरो ज्ञानले गर्दा म circuit board देखि app store सम्म पूरा product बनाउन सक्छु। **TechAsdy** मार्फत ८,०००+ इन्जिनियर, हार्डवेयर प्राविधिक र विद्यार्थीहरूको समुदायसँग Made in Nepal र DIY संस्कृतिलाई नयाँ परिभाषा दिँदैछु।',
     ],
     facts: [
-      { label: 'शिक्षा', value: 'Master of IT, सिक्किम मणिपाल विश्वविद्यालय, सन् २००९ (A ग्रेड)' },
+      { label: 'शिक्षा', value: 'Master of Science in IT(MscIT), सिक्किम मणिपाल विश्वविद्यालय, सन् २००९ (A ग्रेड)' },
       { label: 'प्रमाणपत्र', value: 'CCNA, Cisco Networks USA, सन् २०११' },
       { label: 'हालको भूमिका', value: 'Lead Mobile Developer, FieldEx' },
       { label: 'जन्म', value: 'अप्रिल १९८५ · कास्की' },
