@@ -6,13 +6,31 @@ export default function Navbar() {
   const { t } = useLang()
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const [active, setActive] = useState('')
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 8)
+    const ids = ['about', 'experience', 'highlights', 'publications', 'techasdy', 'reviews', 'contact']
+    const onScroll = () => {
+      setScrolled(window.scrollY > 8)
+      // Active = last nav section whose top has passed just below the fixed header.
+      const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2
+      let current = ''
+      for (const id of ids) {
+        const el = document.getElementById(id)
+        if (el && el.getBoundingClientRect().top <= 120) current = id
+      }
+      setActive(atBottom ? 'contact' : current)
+    }
     onScroll()
     window.addEventListener('scroll', onScroll, { passive: true })
-    return () => window.removeEventListener('scroll', onScroll)
+    window.addEventListener('resize', onScroll)
+    return () => {
+      window.removeEventListener('scroll', onScroll)
+      window.removeEventListener('resize', onScroll)
+    }
   }, [])
+
+  const isActive = (href: string) => href === `#${active}`
 
   const links = [
     { href: '#about', label: t.nav.about },
@@ -42,7 +60,10 @@ export default function Navbar() {
             <li key={l.href}>
               <a
                 href={l.href}
-                className="rounded-md px-2.5 py-2 text-sm font-medium text-secondary transition-colors hover:text-primary"
+                aria-current={isActive(l.href) ? 'location' : undefined}
+                className={`rounded-md px-2.5 py-2 text-sm font-medium transition-colors hover:text-primary ${
+                  isActive(l.href) ? 'bg-primary/10 text-primary' : 'text-secondary'
+                }`}
               >
                 {l.label}
               </a>
@@ -77,7 +98,10 @@ export default function Navbar() {
                 <a
                   href={l.href}
                   onClick={() => setOpen(false)}
-                  className="block rounded-md px-2 py-3 font-medium text-ink hover:text-primary"
+                  aria-current={isActive(l.href) ? 'location' : undefined}
+                  className={`block rounded-md px-2 py-3 font-medium hover:text-primary ${
+                    isActive(l.href) ? 'bg-primary/10 text-primary' : 'text-ink'
+                  }`}
                 >
                   {l.label}
                 </a>
